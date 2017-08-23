@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Calculadora;
 
+import calculo.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -37,9 +34,19 @@ public class CalculadoraTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    // sumar
+    @Test
+    public void testSuma(){
+    int resultado = Calculadora.suma(1014, 1200);
+    int esperado = 2214; 
+    assertEquals(esperado, resultado);       
+    }        
+      // conmutativa
+    @Test
+    public void testSumaConmutativa(){
+    int resultado = Calculadora.suma(1200,1014 );
+    int esperado = 2214; 
+    assertEquals(esperado, resultado);       
+    }   
+    
 }
