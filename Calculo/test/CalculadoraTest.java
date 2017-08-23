@@ -1,5 +1,5 @@
 
-package Calculadora;
+
 
 import calculo.*;
 import org.junit.After;
@@ -62,4 +62,13 @@ public class CalculadoraTest {
     int esperado = -7; 
     assertEquals(esperado, resultado);       
     }
+    
+    //Distributiva
+    @Test
+    public void testDistributiva(){
+    int resultado = Calculadora.distributiva(2, 6, 4);
+    int esperado = 20; 
+    assertEquals(esperado, resultado);    
+    }
+    
 }
