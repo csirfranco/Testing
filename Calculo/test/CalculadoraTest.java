@@ -70,5 +70,19 @@ public class CalculadoraTest {
     int esperado = 20; 
     assertEquals(esperado, resultado);    
     }
+    //Expresion1
+    @Test
+    public void testExpresion1(){
+        int resultado = Calculadora.expresion1(2, 3, 1, 4);
+        int esperado = 9;
+        assertEquals(esperado, resultado);        
+    }
     
+    //Expresion2 los parentesis se resuelven prmero
+    @Test
+    public void testExpresion2(){
+        int resultado = Calculadora.expresion2(2, 3, 1, 4);
+        int esperado = 25;
+        assertEquals(esperado, resultado);        
+    }
 }
