@@ -85,4 +85,16 @@ public class CalculadoraTest {
         int esperado = 25;
         assertEquals(esperado, resultado);        
     }
+    @Test
+    public void testDivision(){
+        int resultado;
+        int espera;
+    resultado=Calculadora.divi(24, 12);
+    espera=2;
+    assertEquals(resultado,espera);
+    }
+      @Test(expected = ArithmeticException.class) 
+    public void testDivPorCero(){
+    Calculadora.divi(5, 0);
+    }
 }
