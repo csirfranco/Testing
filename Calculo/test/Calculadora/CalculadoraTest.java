@@ -48,5 +48,18 @@ public class CalculadoraTest {
     int esperado = 2214; 
     assertEquals(esperado, resultado);       
     }   
-    
+    // restar
+    @Test
+    public void testResta(){
+    int resultado = Calculadora.resta(10,3 );
+    int esperado = 7; 
+    assertEquals(esperado, resultado);       
+    }
+     // Test resta minuendo
+   @Test
+    public void testRestaMinuendo(){
+    int resultado = Calculadora.resta(3, 10);
+    int esperado = -7; 
+    assertEquals(esperado, resultado);       
+    }
 }
